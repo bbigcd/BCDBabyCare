@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  BCDBabyCare
 //
-//  Created by chendi on 2017/11/13.
+//  Created by chendi on 2017/11/14.
 //  Copyright © 2017年 bbigcd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
 
 @end
-
