@@ -30,19 +30,27 @@ static NSString *const collectionViewCell = @"SimpleCollectionViewCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"宝宝陪护";
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    
     self.flowLayout = [[UICollectionViewFlowLayout alloc] init];
     self.flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     self.flowLayout.minimumInteritemSpacing = 5;  // 左右中间间隔距离
     self.flowLayout.minimumLineSpacing = 5;       // 选项间上下距离间距
-    self.flowLayout.itemSize = CGSizeMake((SCREEN_W - 40) / 3, 80);
-    self.flowLayout.sectionInset = UIEdgeInsetsMake(15, 5, 5, 5);
+    self.flowLayout.itemSize = CGSizeMake(SCREEN_W - 20, 120);
+    self.flowLayout.sectionInset = UIEdgeInsetsMake(15, 10, 5, 10);
     
     self.collectionView.collectionViewLayout = self.flowLayout;
+    self.collectionView.backgroundColor = [UIColor lightGrayColor];
     self.collectionView.alwaysBounceVertical = YES;
     [self.collectionView registerNib:[UINib nibWithNibName:@"MainCollectionViewCell" bundle:nil]  
           forCellWithReuseIdentifier:collectionViewCell];
     
+//    UILabel *label = [[UILabel alloc] init];
+//    label.text = @"ceshi";
+//    [self.collectionView addSubview:label];
+//
+//    NSLog(@"%@", NSStringFromCGSize(self.collectionView.bounds.size));
+//    NSLog(@"%@", NSStringFromCGSize(self.collectionView.contentSize));
+//    label.frame = (CGRect){10, self.collectionView.contentSize.height - 104, 100, 40};
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,7 +85,7 @@ static NSString *const collectionViewCell = @"SimpleCollectionViewCell";
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return 5;
 }
 
 // Cell显示动画
@@ -94,17 +102,17 @@ static NSString *const collectionViewCell = @"SimpleCollectionViewCell";
          */
         [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.2 animations:^{
             cell.contentView.alpha = .2;
-            cell.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(0.2, 0.2), 0);
+            cell.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(0.4, 0.4), 0);
         }];
         
         [UIView addKeyframeWithRelativeStartTime:0.2 relativeDuration:0.2 animations:^{
             cell.contentView.alpha = .5;
-            cell.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(0.5, 0.5), 0);
+            cell.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(0.7, 0.7), 0);
         }];
         
         [UIView addKeyframeWithRelativeStartTime:0.4 relativeDuration:0.4 animations:^{
             cell.contentView.alpha = .7;
-            cell.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.2, 1.2), 0);
+            cell.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.1, 1.1), 0);
             
         }];
         
