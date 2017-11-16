@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "BCDNavViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+    self.window.rootViewController = [[BCDNavViewController alloc] initWithRootViewController:[[MainViewController alloc] init]];
     [self.window makeKeyAndVisible];
     
     return YES;

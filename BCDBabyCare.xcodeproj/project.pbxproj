@@ -15,6 +15,7 @@
 		5411ED3B1FBB30010069B5AE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5411ED391FBB30010069B5AE /* MainViewController.xib */; };
 		5411ED3F1FBB30320069B5AE /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5411ED3D1FBB30320069B5AE /* MainCollectionViewCell.m */; };
 		5411ED401FBB30320069B5AE /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5411ED3E1FBB30320069B5AE /* MainCollectionViewCell.xib */; };
+		5431D0731FBDE09D0068D324 /* BCDNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431D0721FBDE09D0068D324 /* BCDNavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		5411ED3C1FBB30320069B5AE /* MainCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
 		5411ED3D1FBB30320069B5AE /* MainCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
 		5411ED3E1FBB30320069B5AE /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		5431D0711FBDE09D0068D324 /* BCDNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDNavViewController.h; sourceTree = "<group>"; };
+		5431D0721FBDE09D0068D324 /* BCDNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDNavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		5411ED171FB9E9B40069B5AE /* BCDBabyCare */ = {
 			isa = PBXGroup;
 			children = (
+				5431D06F1FBDE0270068D324 /* Base */,
 				5411ED2E1FBB2BAC0069B5AE /* Main */,
 				5411ED181FB9E9B40069B5AE /* AppDelegate.h */,
 				5411ED191FB9E9B40069B5AE /* AppDelegate.m */,
@@ -111,6 +115,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5431D06F1FBDE0270068D324 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5431D0701FBDE0410068D324 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5431D0701FBDE0410068D324 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5431D0711FBDE09D0068D324 /* BCDNavViewController.h */,
+				5431D0721FBDE09D0068D324 /* BCDNavViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +158,7 @@
 		5411ED0D1FB9E9B40069B5AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BCD;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = bbigcd;
 				TargetAttributes = {
@@ -185,6 +207,7 @@
 			files = (
 				5411ED281FB9E9B40069B5AE /* main.m in Sources */,
 				5411ED1A1FB9E9B40069B5AE /* AppDelegate.m in Sources */,
+				5431D0731FBDE09D0068D324 /* BCDNavViewController.m in Sources */,
 				5411ED3A1FBB30010069B5AE /* MainViewController.m in Sources */,
 				5411ED3F1FBB30320069B5AE /* MainCollectionViewCell.m in Sources */,
 			);
