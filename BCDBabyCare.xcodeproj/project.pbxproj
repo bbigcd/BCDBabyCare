@@ -16,6 +16,7 @@
 		5411ED3F1FBB30320069B5AE /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5411ED3D1FBB30320069B5AE /* MainCollectionViewCell.m */; };
 		5411ED401FBB30320069B5AE /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5411ED3E1FBB30320069B5AE /* MainCollectionViewCell.xib */; };
 		5431D0731FBDE09D0068D324 /* BCDNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431D0721FBDE09D0068D324 /* BCDNavViewController.m */; };
+		54EB50361FBFDE66003CA616 /* BCDPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EB50351FBFDE66003CA616 /* BCDPushManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		5411ED3E1FBB30320069B5AE /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		5431D0711FBDE09D0068D324 /* BCDNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDNavViewController.h; sourceTree = "<group>"; };
 		5431D0721FBDE09D0068D324 /* BCDNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDNavViewController.m; sourceTree = "<group>"; };
+		54EB50341FBFDE66003CA616 /* BCDPushManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDPushManager.h; sourceTree = "<group>"; };
+		54EB50351FBFDE66003CA616 /* BCDPushManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDPushManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 		5411ED171FB9E9B40069B5AE /* BCDBabyCare */ = {
 			isa = PBXGroup;
 			children = (
+				54EB50321FBFDE3B003CA616 /* Other */,
 				5431D06F1FBDE0270068D324 /* Base */,
 				5411ED2E1FBB2BAC0069B5AE /* Main */,
 				5411ED181FB9E9B40069B5AE /* AppDelegate.h */,
@@ -130,6 +134,23 @@
 				5431D0721FBDE09D0068D324 /* BCDNavViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		54EB50321FBFDE3B003CA616 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				54EB50331FBFDE4B003CA616 /* Push */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		54EB50331FBFDE4B003CA616 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				54EB50341FBFDE66003CA616 /* BCDPushManager.h */,
+				54EB50351FBFDE66003CA616 /* BCDPushManager.m */,
+			);
+			path = Push;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +231,7 @@
 				5431D0731FBDE09D0068D324 /* BCDNavViewController.m in Sources */,
 				5411ED3A1FBB30010069B5AE /* MainViewController.m in Sources */,
 				5411ED3F1FBB30320069B5AE /* MainCollectionViewCell.m in Sources */,
+				54EB50361FBFDE66003CA616 /* BCDPushManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

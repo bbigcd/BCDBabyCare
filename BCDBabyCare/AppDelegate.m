@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "BCDNavViewController.h"
+#import "BCDPushManager.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[BCDNavViewController alloc] initWithRootViewController:[[MainViewController alloc] init]];
     [self.window makeKeyAndVisible];
+    // 获取通知权限 iOS 8 以上需要获取系统通知权限
+    [BCDPushManager getPushSetting:application];
     
     return YES;
 }

@@ -51,6 +51,18 @@ static NSString *const collectionViewCell = @"SimpleCollectionViewCell";
 //    NSLog(@"%@", NSStringFromCGSize(self.collectionView.bounds.size));
 //    NSLog(@"%@", NSStringFromCGSize(self.collectionView.contentSize));
 //    label.frame = (CGRect){10, self.collectionView.contentSize.height - 104, 100, 40};
+    
+//    UserNotifications *userNotifiations = [[UserNotifications alloc] init];
+//    userNotifiations.name =
+    
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.alertTitle = @"alertTitle";
+    localNotification.alertBody = @"alertBody";
+    
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:3];
+    
+    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
+    
 }
 
 - (void)didReceiveMemoryWarning
